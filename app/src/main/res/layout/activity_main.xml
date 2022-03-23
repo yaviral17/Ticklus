@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splash_Screen_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_animation"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/splashscreen_ka_logo"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:contentDescription="@string/todo"
+        android:foregroundGravity="center_horizontal"
+        android:src="@drawable/lggo"
+        app:layout_constraintBottom_toTopOf="@+id/App_ka_nam"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <TextView
+        android:id="@+id/App_ka_nam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TICKLUS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

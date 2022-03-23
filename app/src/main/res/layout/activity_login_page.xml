@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_page_layout"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient_animation"
+    android:layout_height="match_parent"
+    tools:context=".Login_page">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/innder_const_background"
+        android:layout_margin="20dp">
+
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:id="@+id/login_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/login_to_continue"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="@+id/email_lodin_page"
+            app:layout_constraintStart_toStartOf="@+id/email_lodin_page"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/logo_login_page"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/lggo"
+            android:layout_marginHorizontal="100dp"
+            app:layout_constraintTop_toBottomOf="@id/login_text"
+            app:layout_constraintLeft_toLeftOf="@id/login_text"
+            app:layout_constraintRight_toRightOf="@id/login_text"
+            app:layout_constraintBottom_toTopOf="@id/email_lodin_page"/>
+
+
+        <EditText
+            app:layout_constraintBottom_toTopOf="@id/password_register"
+            android:id="@+id/email_lodin_page"
+            android:layout_width="match_parent"
+            android:elevation="3dp"
+            android:background="@drawable/edit_text_theme"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:paddingStart="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="40dp"
+            android:inputType="textEmailAddress"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="105dp" />
+
+        <EditText
+            android:id="@+id/password_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:hint="@string/password"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:background="@drawable/edit_text_theme"
+            android:inputType="textPassword"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:elevation="3dp"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/register_btn"
+            android:layout_marginBottom="100dp" />
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="@+id/register_btn"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/register_btn"
+            app:layout_constraintTop_toTopOf="@+id/register_btn"
+            app:layout_constraintVertical_bias="0.0"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="20dp"/>
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:textAllCaps="false"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/login_btn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="20dp"
+
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
