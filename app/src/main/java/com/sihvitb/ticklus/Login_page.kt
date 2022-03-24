@@ -1,5 +1,6 @@
 package com.sihvitb.ticklus
 
+import android.content.Intent
 import android.graphics.drawable.AnimationDrawable
 import android.os.Bundle
 import android.widget.Toast
@@ -27,6 +28,10 @@ class Login_page : AppCompatActivity() {
 //        login_btn.setOnClickListener(){
 //            startActivity(Intent(this,Home_nav::class.java))
 //            finish()
+        register_btn.setOnClickListener(){
+            startActivity(Intent(this,Registeration_page::class.java))
+        }
+
 
         login_btn.setOnClickListener() {
                 val email = email_lodin_page.text.toString()
@@ -35,11 +40,8 @@ class Login_page : AppCompatActivity() {
                     auth.signInWithEmailAndPassword(email, passwd)
                         .addOnCompleteListener(this) { task ->
                             if (task.isSuccessful) {
-                                // Sign in success, update UI with the signed-in user's information
-                                //                    Log.d(TAG, "signInWithEmail:success")
-                                //                    val user = auth.currentUser
-                                //                    updateUI(user)
-                                Toast.makeText(this, "Login Success", Toast.LENGTH_SHORT).show()
+                                Toast.makeText(this, "Welcome", Toast.LENGTH_SHORT).show()
+                                startActivity(Intent(this,Home_nav::class.java))
                             } else {
                                 // If sign in fails, display a message to the user.
 //                                Log.w(TAG, "signInWithEmail:failure", task.exception)
@@ -56,7 +58,12 @@ class Login_page : AppCompatActivity() {
 
         }
     }
-    fun checkUserDetails(email:String ,passwd:String):Boolean {
-        return email.trim{it<=' '}.isNotEmpty() && passwd.trim{it<=' '}.isNotEmpty()
+    private fun checkUserDetails(email:String, passwd:String):Boolean {
+        return if (email.trim { it <= ' ' }.isNotEmpty() && passwd.trim { it <= ' ' }.isNotEmpty()) {
+            true
+        } else {
+            Toast.makeText(this, "Enter The Details !", Toast.LENGTH_SHORT).show()
+            false
+        }
     }
 }

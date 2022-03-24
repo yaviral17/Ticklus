@@ -14,10 +14,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-//        val animDrawable = splash_Screen_layout.background as AnimationDrawable
-//        animDrawable.setEnterFadeDuration(10)
-//        animDrawable.setExitFadeDuration(5000)
-//        animDrawable.start()
+        val animDrawable = splash_Screen_layout.background as AnimationDrawable
+        animDrawable.setEnterFadeDuration(10)
+        animDrawable.setExitFadeDuration(5000)
+        animDrawable.start()
 
         Handler1().postDelayed({ startActivity(Intent(this,Login_page::class.java))
             finish()},2500)

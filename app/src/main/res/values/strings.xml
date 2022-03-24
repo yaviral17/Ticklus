@@ -23,4 +23,5 @@
     <string name="menu_slideshow">My Tickets</string>
     <string name="user_name">User Name</string>
     <string name="user_email">demo@demo.com</string>
+    <string name="confirm_password">Confirm Password</string>
 </resources>
