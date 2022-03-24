@@ -42,7 +42,7 @@
 
 
         <EditText
-            app:layout_constraintBottom_toTopOf="@id/password_register"
+            app:layout_constraintBottom_toTopOf="@id/password_login_page"
             android:id="@+id/email_lodin_page"
             android:layout_width="match_parent"
             android:elevation="3dp"
@@ -61,7 +61,7 @@
             tools:layout_editor_absoluteY="105dp" />
 
         <EditText
-            android:id="@+id/password_register"
+            android:id="@+id/password_login_page"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingStart="20dp"

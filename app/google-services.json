@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "552929648014",
+    "project_id": "ticklus-32119",
+    "storage_bucket": "ticklus-32119.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552929648014:android:b45d656087772572ee58df",
+        "android_client_info": {
+          "package_name": "com.sihvitb.ticklus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "552929648014-p04hr6jshre32qoelkida3668queumb5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sihvitb.ticklus",
+            "certificate_hash": "af76967d9aab279e5abd5cd24f3d857fc153b7f4"
+          }
+        },
+        {
+          "client_id": "552929648014-jdkgq477ff0186g41v6p7au184mltctd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMxtUTJRjz1IaWj12AaEfGFn78Bxj02TQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "552929648014-jdkgq477ff0186g41v6p7au184mltctd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
