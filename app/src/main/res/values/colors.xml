@@ -11,5 +11,6 @@
     <color name="colorGradientStart">#D9FF43</color>
     <color name="colorGradientCenter">#F67831</color>
     <color name="colorGradientEnd">#FF1493</color>
+    <color name="shade">#DEFFFDDB</color>
     <color name="Button_color_red">#CF293D</color>
 </resources>
