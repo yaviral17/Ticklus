@@ -11,9 +11,9 @@
         android:theme="@style/Theme.Ticklus">
         <activity
             android:name=".Home_nav"
-            android:exported="false"
             android:label="@string/title_activity_home_nav"
-            android:theme="@style/Theme.Ticklus.NoActionBar" />
+            android:theme="@style/Theme.Ticklus.NoActionBar"
+            android:exported="false"/>
         <activity
             android:name=".Registeration_page"
             android:exported="false"
@@ -28,7 +28,6 @@
             android:theme="@style/Theme.Noaction">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

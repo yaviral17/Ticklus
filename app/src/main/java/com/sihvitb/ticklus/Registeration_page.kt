@@ -65,7 +65,8 @@ class Registeration_page : AppCompatActivity() {
                                 auth.createUserWithEmailAndPassword(email , passwd).addOnCompleteListener(this){ task ->
                                     if(task.isSuccessful){
                                         users.document(email).set(user, SetOptions.merge())
-                                        startActivity(Intent(this,Home_nav::class.java))
+                                        Toast.makeText(this, "Welcome", Toast.LENGTH_SHORT).show()
+                                        startActivity(Intent(this,Home_nav::class.java).putExtra("email",email))
                                         finish()
 
 
@@ -82,6 +83,7 @@ class Registeration_page : AppCompatActivity() {
                         } else {
                             Toast.makeText(this, "User Already Registered", Toast.LENGTH_LONG).show()
                             startActivity(Intent(this, Login_page::class.java))
+                            finish()
                         }
                     }
             }

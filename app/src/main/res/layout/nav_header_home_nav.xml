@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="@dimen/nav_header_height"
     android:background="@drawable/custon_side_nav_bar"
@@ -13,6 +14,7 @@
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginHorizontal="100dp"
@@ -22,26 +24,36 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
+            android:id="@+id/User_Profile"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/default_user" />
     </androidx.cardview.widget.CardView>
 
+    <ImageView
+        android:id="@+id/Logout_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/logout_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
         android:id="@+id/user_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/user_name"
-        app:layout_constraintBottom_toTopOf="@id/user_email"
         android:gravity="center_horizontal"
-        />
+        android:text="@string/user_name"
+        app:layout_constraintBottom_toTopOf="@id/user_email" />
 
     <TextView
         android:id="@+id/user_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
         android:text="@string/user_email"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:gravity="center_horizontal"
-        />
+        app:layout_constraintRight_toRightOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

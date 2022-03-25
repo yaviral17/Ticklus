@@ -2,6 +2,7 @@
 
 package com.sihvitb.ticklus
 
+import android.content.Context
 import android.content.Intent
 import android.graphics.drawable.AnimationDrawable
 import androidx.appcompat.app.AppCompatActivity
@@ -19,8 +20,10 @@ class MainActivity : AppCompatActivity() {
         animDrawable.setExitFadeDuration(5000)
         animDrawable.start()
 
-        Handler1().postDelayed({ startActivity(Intent(this,Login_page::class.java))
+        Handler1().postDelayed({ startActivity(Intent(this,Home_nav::class.java))
             finish()},2500)
 
+//        val sharedPref = this.getPreferences(Context.MODE_PRIVATE)?:return
+//        val spEmail = sharedPref.getString("Email",1)
     }
 }
