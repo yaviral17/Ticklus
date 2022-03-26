@@ -15,6 +15,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.firestore.FirebaseFirestore
 import com.sihvitb.ticklus.databinding.ActivityHomeNavBinding
+import kotlinx.android.synthetic.main.content_home_nav.*
 import kotlinx.android.synthetic.main.nav_header_home_nav.*
 
 class Home_nav : AppCompatActivity() {
@@ -49,7 +50,12 @@ class Home_nav : AppCompatActivity() {
         navView.setupWithNavController(navController)
 
 
+//        payment_btn.setOnClickListener{
+//            startActivity(Intent(this,Payment_success_page::class.java))
+//        }
+
         // Session management code starts from here
+
         val sharedPref = this.getPreferences(Context.MODE_PRIVATE) ?:return
         val islogin = sharedPref.getString("Email","1")
 

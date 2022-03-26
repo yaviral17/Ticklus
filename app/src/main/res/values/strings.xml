@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Ticklus</string>
     <string name="login_to_continue">Login to continue</string>
     <string name="password">Password</string>
@@ -24,4 +24,5 @@
     <string name="user_name">User Name</string>
     <string name="user_email">demo@demo.com</string>
     <string name="confirm_password">Confirm Password</string>
+
 </resources>

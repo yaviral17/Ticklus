@@ -43,6 +43,8 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui-ktx:2.4.1'
     implementation 'com.google.firebase:firebase-common-ktx:20.1.0'
     def lottieVersion = "3.4.0"
+    implementation platform('com.google.firebase:firebase-bom:29.3.0')
+    implementation 'com.google.firebase:firebase-storage-ktx'
     implementation "com.airbnb.android:lottie:$lottieVersion"
     implementation platform('com.google.firebase:firebase-bom:29.2.1')
     implementation 'androidx.core:core-ktx:1.7.0'
